@@ -13,8 +13,19 @@
 function max(a, b) {
   // Exercice non implémenté : retourner le plus grand ou un message si égaux
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
-}
+if (typeof a !== 'number' || typeof b !== 'number') {
+		return null;
+    }
+    if (a === b){
+      return 'Les deux nombres sont égaux'
+    }
+    if (a > b  ) {
+      return a;
+    }
+    else
+      return b;
+    }
+    console.log(max(20, 20))
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { max }

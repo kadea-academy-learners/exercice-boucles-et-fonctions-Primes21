@@ -12,7 +12,10 @@
 function saluer(nom) {
   // Exercice non implémenté : afficher Bonjour, [nom] ou Bonjour, inconnu
   // Placeholder neutre : ne fait rien et retourne undefined.
+   nom = "elie"
+  console.log("Bonjour, " + (nom || "inconnu"))
 }
+saluer();
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { saluer }
